@@ -1,0 +1,59 @@
+site_name: Improving the architecture using client vpn
+site_url: https://example.com/
+nav: 
+  - Overview: index.md
+  - Pre-requisite Overview:
+    - Security group: aws-sg.md
+    - Route Table: aws-route-tbl.md
+    - Virtual Private Cloud: aws-vpc.md
+    - Subnet: subnet.md
+    - Elastic-network-interface: eni.md
+  - AWS Client VPN:
+    - Overview: aws-cvpn.md
+    - Working Mechanism: cvpn-working-mechanism.md
+    - Authentication & Authorization: cvpn-auth.md
+    - Use Case: cvpn-use-case.md
+    - Security: cvpn-security.md
+    - Monitoring: cvpn-monitoring.md
+  - Reference : reference.md
+  - FAQ: faq.md
+  - Extra: osi-model.md
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue grey
+      toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.sections
+
+plugins:
+    - with-pdf:
+        author: Anuj Kumar Singh
+        copyright: Open-book
+        cover: true
+        back_cover: true
+        cover_title: AWS Client VPN
+        cover_subtitle: Enhancement of current system with CVPN
+        custom_template_path: TEMPLATES PATH
+        exclude_pages:
+            - 'osi-model/'
+
+        two_columns_level: 3
+
+
+        output_path: ../book/document.pdf
+
+        debug_html: false
+        show_anchors: true
+        verbose: true
+
+
+
